@@ -17,6 +17,75 @@
 
     <!-- Your styles here -->
     <style>
+      #flexcontainer1 {
+        display: flex;
+      }
+      #flexcontainer2 {
+        display: flex;
+      }
+
+      #flexcontainer2 :nth-child(1) {
+        order: 5;
+      }
+
+      #flexcontainer2 :nth-child(2) {
+        order: 1;
+      }
+
+      #flexcontainer2 :nth-child(3) {
+        order: 4;
+      }
+      
+      #flexcontainer2 :nth-child(4) {
+        order: 3;
+      }
+
+      #flexcontainer2 :nth-child(5) {
+        order: 2;
+      }
+
+      #flexcontainer3 {
+        display: flex;
+      }
+
+      #flexcontainer3 :nth-child(1) {
+        flex-grow: 1;
+      }
+      #flexcontainer3 :nth-child(2) {
+        flex-grow: 2;
+      }
+      #flexcontainer3 :nth-child(3) {
+        flex-grow: 3;
+      }
+
+      #flexcontainer4 {
+        display: flex;
+        justify-content: center;
+      }
+
+      #flexcontainer5 {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #flexcontainer6 {
+        display: flex;
+        height: 300px;
+        border: 1px solid red;
+        align-items: center;
+      }
+
+      #flexcontainer7 {
+        display: flex;
+        height: 300px;
+        border: 1px solid red;
+        align-items: stretch;
+      }
+
+      #flexcontainer7 div {
+        background-color: aqua;
+      }
+
     </style>
   </head>
   <body>
