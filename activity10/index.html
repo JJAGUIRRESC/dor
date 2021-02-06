@@ -68,6 +68,25 @@
 
     .topmenu-submenu {
       float: left;
+      background: white;
+      width: 98%;
+      margin: 0.2rem;
+      padding: 0.2rem;
+      border-radius: 6px;
+      font-size: 1.4rem;
+    }
+
+    .topmenu-suboption:hover {
+      background-color: #2a7489;
+      color: white;
+    }
+
+    .topmenu-suboption a {
+      color: black;
+    }
+
+    .topmenu-suboption a:hover {
+      color: white;
     }
 
     #left-column {
@@ -102,7 +121,7 @@
       font-size: 1.2rem;
     }
 
-    #content h2{
+    #content h2 {
       text-align: center;
       text-transform: uppercase;
     }
@@ -120,7 +139,7 @@
 <body>
   <span class="huge">Activity 10: Accesibility</span>
   <p style="font-size: 1.3rem;">This is a nightmare webpage in terms of accesibility, change anything you
-      need to make it shine.</p>
+    need to make it shine.</p>
   <div class="container">
     <div class="row" id="navbar">
       <div class="col-sm-3" id="topmenu4">
@@ -194,7 +213,7 @@
       if (topM1.querySelectorAll('.topmenu-suboption').length) {
         topM1.innerHTML = '<div class="topmenu-option">BUSCADORES</div>';
       } else {
-        topM1.innerHTML = '<div class="topmenu-option">BUSCADORES</div><div class="topmenu-submenu"><div class="topmenu-suboption"><a href="https://google.com/">Google</div><div class="topmenu-suboption"><a href="https://bing.com/">Bing</div></div>';
+        topM1.innerHTML = '<div class="topmenu-option">BUSCADORES</div><div class="topmenu-submenu"><div class="topmenu-suboption"><a href="https://google.com/"><div>Google</div></a></div><div class="topmenu-suboption"><a href="https://bing.com/"><div>Bing</div></a></div></div>';
       }
     }
     var topM2 = document.getElementById('topmenu2');
