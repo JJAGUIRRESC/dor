@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Activity 10: Accesibility</title>
+  <style>
+    .item {
+      border: 1px solid black;
+    }
+
+    #flexcontainer5 .item {
+      max-width: 70px;
+    }
+
+    .huge {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background-color: #DD0000;
+      color: red;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    #navbar {
+      background: black;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+    }
+
+    #navbar .col-sm-3 {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+
+    #navbar .col-sm-3 a:hover {
+      text-decoration: none;
+    }
+
+    .topmenu-option {
+      background-color: #c4e4ed;
+      border-radius: 6px;
+      color: black;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.4rem;
+      margin: 0.2rem;
+    }
+
+    .topmenu-option:hover {
+      background-color: #2a7489;
+      color: white;
+    }
+
+    .topmenu-submenu {
+      float: left;
+    }
+
+    #left-column {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+    }
+
+    #left-column span {
+      font-size: 1.4rem;
+      color: black;
+      padding-left: 0.2rem;
+    }
+
+    #left-column span a {
+      color: black;
+    }
+
+    #left-column span:hover {
+      background-color: #2a7489;
+      color: white;
+    }
+
+    #left-column span a:hover {
+      text-decoration: none;
+      color: white;
+    }
+
+    #content {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    #content h2{
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: 995px) {
+
+      .topmenu-option {
+        font-size: 1.5rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <span class="huge">Activity 10: Accesibility</span>
+  <p style="font-size: 1.3rem;">This is a nightmare webpage in terms of accesibility, change anything you
+      need to make it shine.</p>
+  <div class="container">
+    <div class="row" id="navbar">
+      <div class="col-sm-3" id="topmenu4">
+        <a href="index.html">
+          <div class="topmenu-option">
+            INICIO
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-3" id="topmenu1">
+        <div class="topmenu-option">
+          BUSCADORES
+        </div>
+      </div>
+      <div class="col-sm-3" id="topmenu2">
+        <div class="topmenu-option">
+          WIKIPEDIA
+        </div>
+      </div>
+      <div class="col-sm-3" id="topmenu3">
+        <div class="topmenu-option">
+          YOUTUBE
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3" id="left-column">
+        <span><a href="/index.html">Default Page</a></span>
+        <span onclick="showContent1()">Content 1</span>
+        <span onclick="showContent2()">Content 2</span>
+      </div>
+      <div class="col-sm-9" id="content">
+        <h2>DEFAULT PAGE</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis
+        nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel
+        illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non
+        provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige
+        quod maxim placeat facer possim omnis volupt
+        <br><br>
+        Lorem ipsum dolor si amet, consectetur adipiscing incidunt ut labore et dolore magna aliquam erat nostrud
+        exercitation ullamcorper suscipit laboris nis duis autem vel eum irure dolor in reprehenderit i, dolore eu
+        fugiat nulla pariatur. At vero eos et accusa praesant luptatum delenit aigue duos dolor et mole provident, simil
+        tempor sunt in culpa qui officia de fuga. Et harumd dereud facilis est er expedit disti eligend optio congue
+        nihil impedit doming id quod assumenda est, omnis dolor repellend. Temporibud
+        <br><br>
+        Lorem ipsum dolor si amet, consectetur adipiscing incidunt ut labore et dolore magna aliquam erat nostrud
+        exercitation ullamcorper suscipit laboris nis duis autem vel eum irure dolor in reprehenderit i dolore eu fugiat
+        nulla pariatur. At vero eos et accus praesant luptatum delenit aigue duos dolor et mol provident, simil tempor
+        sunt in culpa qui officia de fuga. Et harumd dereud facilis est er expedit disti eligend oprio congue nihil
+        impedit doming id quod assumenda est, omnis dolor repellend. Temporibud
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    var topM1 = document.getElementById('topmenu1');
+    topM1.onclick = function () {
+      ;
+      if (topM1.querySelectorAll('.topmenu-suboption').length) {
+        topM1.innerHTML = '<div class="topmenu-option">BUSCADORES</div>';
+      } else {
+        topM1.innerHTML = '<div class="topmenu-option">BUSCADORES</div><div class="topmenu-submenu"><div class="topmenu-suboption"><a href="https://google.com/">Google</div><div class="topmenu-suboption"><a href="https://bing.com/">Bing</div></div>';
+      }
+    }
+    var topM2 = document.getElementById('topmenu2');
+    topM2.onclick = function () {
+      ;
+      window.open('https://www.wikipedia.org/', "_blank");
+      //location.href = 'https://www.wikipedia.org/';
+    }
+    var topM3 = document.getElementById('topmenu3');
+    topM3.onclick = function () {
+      ;
+      window.open('https://www.youtube.com/', "_blank");
+      //location.href = 'https://www.youtube.com/';
+    }
+    function showContent1() {
+      var content = document.getElementById('content');
+      content.innerHTML = '<span class="important" style="color:black; font-size:2em;"><h2>THIS IS THE FIRST CONTENT</h2><br/><img class="mx-auto d-block" src="content2.png" alt="Lorem Ipsum Writing" style="width: 100%;max-width:400px;height: auto;"></span><h3>And lot more</h3>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore<br><br><h3>Content</h3><p>is</p><p>important</p>'
+    }
+    function showContent2() {
+      var content = document.getElementById('content');
+      content.innerHTML = '<h2>Lorem ipsum dolor sit amet</h2>Consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt'
+    }
+  </script>
+</body>
+
+</html>
